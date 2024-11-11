@@ -97,5 +97,3 @@ port mode register
 
 port input data register
 - 0위치의 비트를 제외한 다른 모든 비트를 0으로 만듬
-
-

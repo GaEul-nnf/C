@@ -165,4 +165,3 @@ char , int, short, long long int 형식의 포인터 변수를 각각 정의함
 int 형식의 포인터 변수의 long long int 형식의 g_data를 캐스트
 
 pAddress를 역참조해서 포인터 내용을 1씩 증가시킴
-

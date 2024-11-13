@@ -1,0 +1,16 @@
+초기 설정:
+HAL_Init()를 통해 HAL 라이브러리 초기화
+pc13_btn_init()와 pa5_led_init() 함수를 호출해 버튼과 LED 핀 각각 초기화
+
+무한 루프:
+buttonStatus 변수에 HAL_GPIO_ReadPin()을 통해 BTN_PIN(PC13 핀)에서 버튼 입력 읽기, HAL_GPIO_WritePin() 함수를 사용해 LED_PIN(PA5 핀)에 buttonStatus의 값을 출력, 이로써 버튼을 누르면 LED 소등, 버튼을 떼면 LED 점등
+
+버튼 및 LED 초기화 함수:
+pc13_btn_init(): PC13을 입력 모드로 설정하여 버튼의 입력 신호 읽기
+pa5_led_init(): PA5를 출력 모드로 설정하여 LED 제어
+
+시스템 틱 핸들러:
+Systick_Handler()는 HAL 라이브러리에서 사용되는 시스템 틱을 증가시키는 함수로, 시간 지연을 위한 틱을 유지하는 데 사용
+
+기능: 
+보드에서 버튼을 떼면 LED가 점등, 버튼을누르면 LED가 꺼지도록함

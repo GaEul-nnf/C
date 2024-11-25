@@ -1,5 +1,3 @@
-README.md
-
 # 2024.11.25
 
 ## 15_SPI_Polling

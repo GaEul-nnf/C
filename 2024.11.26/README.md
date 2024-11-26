@@ -1,5 +1,3 @@
-README.md
-
 # 2024.11.26
 
 ## 18_I2C_Driver
